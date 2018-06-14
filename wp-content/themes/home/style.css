@@ -1,0 +1,94 @@
+/*
+Theme Name: Boyu's Portfolio Homepage
+Author: Michael Leon
+Description: Home page style
+Version: 0.1
+
+I love you
+*/
+ body, html {
+    height: 100%;
+    width:100%;
+    background-color:rgb(223, 222, 222)
+}
+.wrapper{
+    background-image:url("img/background.png");
+    background-size: cover;
+   
+    height:100%;
+}
+.container-fluid{
+    height:100%;
+    width:30%;
+    background-color:rgba(255, 255, 255, 0.5);
+    margin-right:0;
+    overflow:hidden;
+    padding-top:10%;
+    padding-left:2%;
+    padding-right:2%;
+    min-width:250px;
+}
+.container{
+    width:100%;
+    padding-left:25%;
+    padding-right:25%;
+}
+#square{
+    margin:0 auto;
+    height:200px;
+    width:100%;
+    color:rgb(0, 0, 0);
+    padding-top:75px;
+}
+.row{
+    margin:0;
+    margin-bottom:15%;
+    width:100%;
+}
+.col-md-12{
+    margin:0 auto;
+    height:85px;
+    width:100%;
+    padding:0;
+    perspective: 1000px;    
+}
+a{
+    color:black;
+}
+.col-md-12 h3{
+    padding-top:15px;
+    text-align:center;
+}
+.col-md-12 p{
+    color:rgb(1, 150, 170);
+}
+.black, .white{
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all 0.3s linear;
+}
+.col-md-12:hover .black, .col-md-12:hover .white{
+    transform: rotateX(180deg);
+}
+.front, .back{
+    backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.white > .front{
+    z-index: 2;
+    height:100%;
+    width:100%;
+    transform: rotateX(0deg);
+    background-color:rgba(79, 81, 82, 0.1);
+    border:1px solid black;
+}
+
+.white > .back{
+    transform: rotateX(180deg);
+    height:100%;
+    width:100%;
+    background-color:rgb(223, 223, 223);
+    border:1px solid black;
+}
