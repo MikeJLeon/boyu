@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
+    
 
     <!-- load bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,12 +19,23 @@
 
 <body>
     <div class="wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid navContainer">
             <div class="container">
+                 <div class="row">
+                    <div class="col-md-12 active" id="Home" style="z-index:5">
+                        <div class="white" >
+                            <div class="front">
+                                <h3>Home</h3>
+                            </div>
+                            <div class="back">
+                                <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                    <a href="design">
-                        <div class="col-md-12">
-                        <div class="white">
+                        <div class="col-md-12" id="design" style="z-index:5">
+                        <div class="white" >
                             <div class="front">
                                 <h3>Design</h3>
                             </div>
@@ -33,7 +44,6 @@
                             </div>
                         </div>
                     </div>
-                    </a>
                 </div>
                 <div class="row">
                     <a href="photography">
@@ -54,7 +64,7 @@
                         <div class="col-md-12">
                             <div class="white">
                                 <div class="front">
-                                    <h3>Podcasts</h3>
+                                    <h3>Podcast</h3>
                                 </div>
                                 <div class="back">
                                 <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>
@@ -77,14 +87,26 @@
                         </div>
                     </a>
                 </div>
-                <div id="square">
+            </div>
+        </div>
+        <div id="square">
                     <h3>Boyu Zhang</h3>
                     <p>I'm currently a graphic design student trying to start my career</p>
-                </div>
-            </div>
         </div>
     </div>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $("#design").click(function(){
+            $("#square").fadeOut("slow", function(){
+                $("#square").load("design .designContainer", function(){
+                    $('head').append('<link rel="stylesheet" type="text/css" href="wp-content/themes/design/style.css">');
+                    $("#square").fadeIn("slow");
+                    $(".designContainer").fadeIn("slow");
+                    $(".featured").fadeIn("slow");
+                });
+                
+            });
+        });
+    </script>
 </body>
-
 </html>

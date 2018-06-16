@@ -2,7 +2,7 @@
 Theme Name: Boyu's Portfolio Homepage
 Author: Michael Leon
 Description: Home page style
-Version: 0.1
+Version: 0.2
 
 I love you
 */
@@ -12,14 +12,14 @@ I love you
     background-color:rgb(223, 222, 222)
 }
 .wrapper{
-    background-image:url("img/background.png");
     background-size: cover;
-   
     height:100%;
+    width:100%;
 }
-.container-fluid{
+.navContainer{
     height:100%;
     width:30%;
+    float:left;
     background-color:rgba(255, 255, 255, 0.5);
     margin-right:0;
     overflow:hidden;
@@ -28,17 +28,17 @@ I love you
     padding-right:2%;
     min-width:250px;
 }
-.container{
+.navContainer .container{
     width:100%;
     padding-left:25%;
     padding-right:25%;
 }
 #square{
-    margin:0 auto;
     height:200px;
-    width:100%;
+    max-width:960px;
     color:rgb(0, 0, 0);
     padding-top:75px;
+    float:right;
 }
 .row{
     margin:0;
@@ -54,6 +54,11 @@ I love you
 }
 a{
     color:black;
+}
+.active{
+    background-color:black;
+    color:white;
+    border-color:gray;
 }
 .col-md-12 h3{
     padding-top:15px;
@@ -71,6 +76,7 @@ a{
     transform: rotateX(180deg);
 }
 .front, .back{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     backface-visibility: hidden;
 	position: absolute;
 	top: 0;

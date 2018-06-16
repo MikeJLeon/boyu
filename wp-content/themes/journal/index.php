@@ -36,19 +36,19 @@
                         </div>
                         <div class="row" id="rowTop">
                             <div class="col-lg-12">
-                                <a href="../podcast">
-                                    Podcast
+                                <a href="../photography">
+                                    Photography
                                 </a>
                             </div>
                         </div>
                         <div class="row" id="rowTop">
                             <div class="col-lg-12">
-                                <a href="../journal">
-                                    Journal
+                                <a href="../podcast">
+                                    Podcast
                                 </a>
                             </div>
                         </div>
-                        <h3 class="bannerHeader">PHOTOGRAPHY</span>
+                        <h3 class="bannerHeader">JOURNAL</span>
                     </div>
     </div>
     <div class="wrapper">       
@@ -130,11 +130,6 @@
     </div>
     </div>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-        $(".jumbotron").fadeIn("slow");
-        $(".wrapper").fadeIn("slow");
-        $(".featured").fadeIn("slow");
-    </script>
 </body>
 
 </html>

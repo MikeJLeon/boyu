@@ -1,12 +1,13 @@
 /*
-Theme Name: Boyu's Portfolio Design
+Theme Name: Boyu's Portfolio Journal
 Author: Michael Leon
-Description: Design style
-Version: 0.2
+Description: Journal style
+Version: 0.1
 
 I love you
 */
 body{
+    background-image:url("img/background.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -14,16 +15,15 @@ body{
     height:100%;
     padding-top:50px;
 }
-.designContainer{
+.container-fluid{
     height:100%;
     width:100%;
     margin-right:0;
     padding:0;
     padding-bottom:10px;
-    float:right;
 }
 
-.designContainer .container{
+.container{
     width:100%;
     max-width:960px;
     height:100%;
@@ -65,7 +65,6 @@ a{
     transition: transform 0.8s;
     transition-timing-function:ease;
     cursor:pointer;
-    
 }
 .modal-dialog{
     position: relative;

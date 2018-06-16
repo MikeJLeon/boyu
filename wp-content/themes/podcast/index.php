@@ -18,22 +18,52 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="jumbotron jumbotron-fluid"> 
+                    <div class="container-top">
+                        <div class="row" id="rowTop">
+                            <div class="col-lg-12">
+                                <a href="../">
+                                    Home
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" id="rowTop">
+                            <div class="col-lg-12">
+                                <a href="../design">
+                                    Design
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" id="rowTop">
+                            <div class="col-lg-12">
+                                <a href="../photography">
+                                    Photography
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" id="rowTop">
+                            <div class="col-lg-12">
+                                <a href="../journal">
+                                    Journal
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="bannerHeader">PODCAST</span>
+                    </div>
+    </div>
+    <div class="wrapper">       
         <div class="container-fluid">
             <div class="container">
-                
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
                 <?php
                 $count = 0; 
                 while(have_posts()) : the_post();
                     if($count == 0){?>
                         <div class="row">
                             <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
-                                <div class="col-md-4">
-                                    <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                <div class="col-lg-4">
+                                    <div class="imgContainer">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                     </div>
                                 </div> 
                             </a>
                             <div class="modal fade allModal" id="imgModal<?php echo get_the_ID()?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -51,8 +81,10 @@
                     }else if($count % 2 == 0){
                         ?>
                         <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
-                                <div class="col-md-4">
-                                    <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                <div class="col-lg-4">
+                                    <div class="imgContainer">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                    </div>
                                 </div> 
                             </a>
                             <div class="modal fade allModal" id="imgModal<?php echo get_the_ID()?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -60,7 +92,7 @@
                                     <div class="modal-content">
                                         <div class="modal-body">
                                             <span class="close" name="betaClose" data-dismiss="modal">&times;</span>
-                                                <img src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                                <img class="modalImg" src="<?php echo the_post_thumbnail_url(" large "); ?>">
                                                 <h2>Hello</h2>
                                         </div>
                                     </div>
@@ -72,8 +104,10 @@
                     }else{
                         ?>
                         <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
-                                <div class="col-md-4">
-                                    <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                <div class="col-lg-4">
+                                    <div class="imgContainer">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
+                                    </div>
                                 </div> 
                             </a>
                             <div class="modal fade allModal" id="imgModal<?php echo get_the_ID()?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
