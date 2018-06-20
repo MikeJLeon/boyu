@@ -18,7 +18,7 @@
 </head>
 
 <body>
-        <div class="container-fluid designContainer" style="display:none">
+        <div class="container-fluid designContainer">
             <div class="container">
                 <?php
                 $count = 0; 
@@ -28,7 +28,7 @@
                             <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
-                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>" style="display:none;">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
                                      </div>
                                 </div> 
                             </a>
@@ -49,7 +49,7 @@
                         <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
-                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>" style = "display:none;">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
                                     </div>
                                 </div> 
                             </a>
@@ -72,7 +72,7 @@
                         <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
-                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>" style="display:none;">
+                                        <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
                                     </div>
                                 </div> 
                             </a>
@@ -97,7 +97,7 @@
     </div>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
-            $(".designContainer").fadeIn("slow");
+            $(".designContainer ").fadeIn("slow");
             $(".featured").fadeIn("slow");
             $("#photography").click(function(){
                 $(".wrapper").fadeOut("slow", function(){
