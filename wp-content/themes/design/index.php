@@ -25,7 +25,7 @@
                 while(have_posts()) : the_post();
                     if($count == 0){?>
                         <div class="row">
-                            <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
+                            <a class="test" data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
                                         <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
@@ -46,7 +46,7 @@
                     <?php $count++;
                     }else if($count % 2 == 0){
                         ?>
-                        <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
+                        <a class="test" data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
                                         <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">
@@ -69,7 +69,7 @@
                         $count = 0;
                     }else{
                         ?>
-                        <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
+                        <a class="test" data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                                 <div class="col-lg-4">
                                     <div class="imgContainer">
                                         <img class="featured" src="<?php echo the_post_thumbnail_url(" large "); ?>">

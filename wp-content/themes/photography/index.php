@@ -18,41 +18,7 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid"> 
-                    <div class="container-top">
-                        <div class="row" id="rowTop">
-                            <div class="col-lg-12">
-                                <a href="../">
-                                    Home
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row" id="rowTop">
-                            <div class="col-lg-12">
-                                <a href="../design">
-                                    Design
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row" id="rowTop">
-                            <div class="col-lg-12">
-                                <a href="../podcast">
-                                    Podcast
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row" id="rowTop">
-                            <div class="col-lg-12">
-                                <a href="../journal">
-                                    Journal
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="bannerHeader">PHOTOGRAPHY</span>
-                    </div>
-    </div>
-    <div class="wrapper">       
-        <div class="container-fluid">
+<div class="container-fluid photoContainer">
             <div class="container">
                 <?php
                 $count = 0; 
@@ -129,12 +95,6 @@
         </div>
     </div>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-        $(".jumbotron").fadeIn("slow");
-        $(".wrapper").fadeIn("slow");
-        $(".featured").fadeIn("slow");
-    </script>
 </body>
 
 </html>

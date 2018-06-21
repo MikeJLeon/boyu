@@ -22,7 +22,7 @@
     <div class="container-fluid navContainer">
                 <div class="container">
                     <div class="row nav">
-                        <div class="col-md-12 active" id="Home" style="z-index:5">
+                        <div class="col-md-12 active" id="home" style="z-index:5">
                             <div class="white" >
                                 <div class="front">
                                     <h3>Home</h3>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="row nav">
-                            <div class="col-md-12" id="design" style="z-index:5">
+                        <div class="col-md-12" id="design" style="z-index:5">
                             <div class="white" >
                                 <div class="front">
                                     <h3>Design</h3>
@@ -46,84 +46,52 @@
                         </div>
                     </div>
                     <div class="row nav">
-                        <a href="photography">
-                            <div class="col-md-12">
-                                <div class="white">
-                                    <div class="front">
-                                        <h3>Photography</h3>
-                                    </div>
-                                    <div class="back">
-                                        <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>
-                                    </div>
+                       <div class="col-md-12" id="photography" style="z-index:5">
+                            <div class="white" >
+                                <div class="front">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="back">
+                                    <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>    
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="row nav">
-                        <a href="podcasts">
-                            <div class="col-md-12">
-                                <div class="white">
-                                    <div class="front">
-                                        <h3>Podcast</h3>
-                                    </div>
-                                    <div class="back">
-                                    <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>
-                                    </div>
+                        <div class="col-md-12" id="podcast" style="z-index:5">
+                            <div class="white" >
+                                <div class="front">
+                                    <h3>Podcast</h3>
+                                </div>
+                                <div class="back">
+                                    <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>    
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="row nav">
-                        <a href="journal">
-                            <div class="col-md-12">
-                                <div class="white">
-                                    <div class="front">
-                                        <h3>Journal</h3>
-                                    </div>
-                                    <div class="back">
-                                        <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>
-                                    </div>
+                        <div class="col-md-12" id="journal" style="z-index:5">
+                            <div class="white" >
+                                <div class="front">
+                                    <h3>Journal</h3>
+                                </div>
+                                <div class="back">
+                                    <p>BLAHBLAH BLAH BLAH BLAH BLAH BLAHBLAH</p>    
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
 </div>
     <div class="wrapper">
-        <div class="container-fluid home">
+        <div class="container-fluid homeContainer">
                     <h3>Boyu Zhang</h3>
                     <p>I'm currently a graphic design student trying to start my career</p>
         </div>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $("<div/>").load("design .designContainer", function(){
-                    $('head').append('<link rel="stylesheet" type="text/css" href="wp-content/themes/design/style.css">');
-                    $(".wrapper").append(this);
-                    $(".designContainer").unwrap();
-                    
-        });
-        
-    });
-    $("#design").click(function(){
-        $(".featured").show();
-        $('.home').animate({
-            left: '130%'
-        }, "slow");
-        $('.designContainer').animate({
-            opacity: '1'
-        }, 1000);
-    });        
-    $("#Home").click(function(){
-        $('.home').animate({
-            left: '30%'
-        }, "slow").delay(1000);
-        $('.designContainer').animate({
-            opacity: '0'
-        }, 1000);   
-    });        
-    </script>
+    
+        <script src="wp-content/themes/home/js/scripts.js"></script>
+    
 </body>
 </html>

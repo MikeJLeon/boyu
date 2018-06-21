@@ -6,11 +6,7 @@ Version: 0.3
 
 I love you
 */
-body{
-    background-size: cover;
-    background-attachment: fixed;
-}
-.designContainer{
+.designContainer, .photoContainer{
     position:fixed;
     height:100%;
     width:70%;
@@ -18,6 +14,8 @@ body{
     padding:0;
     padding-bottom:10px;
     opacity:0;    
+    overflow-y: scroll;
+    overflow-x:hidden;
 }
 .row{
     margin:0;
