@@ -6,8 +6,50 @@ Version: 0.2
 
 I love you
 */
+html{
+    margin-right: calc(-1 * (100vw - 100%));
+}
 body{
-    background-color:rgb(136, 89, 89);
+    overflow-x:hidden;
+}
+.bottomRight{
+    position:absolute;
+    right:0;
+    bottom:0;
+    background-color:rgba(139, 147, 158, 0.507);
+    padding:10px;
+    text-align:center;
+    color:white;
+    width:20%;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 25px;
+}
+.pageHead{
+    display:none;
+    text-align:center;
+    width:100%;
+}
+.designContainer, .photoContainer{
+    height:100%;
+    width:100%;
+    margin-right:0;
+    padding:0;
+    padding:15px;
+    display:none;
+}
+.modal-body{
+    word-wrap: break-word;
+    max-width:1080px;
+    min-width:720px;
+}
+.modal-body img{
+    width:100%;
+}
+.title{
+    max-width:500px;
+    display:inline-block;   
+    word-wrap: break-word;
+
 }
 .wrapper{
     background-size: cover;
@@ -15,12 +57,7 @@ body{
     margin-left:30%;
     height:100%;
     position:relative;
-}
-.allModal{
-    z-index:300;
-}
-.modal-backdrop.in{
-    z-index:250;
+    width:70%;
 }
 .navWrapper{
     float:left;
@@ -34,7 +71,7 @@ body{
     left:30%;
     width:70%;
     height:100%;
-    background-color:black;
+    background:url("img/background.png");
     z-index:5;
 }
 .navContainer{
@@ -80,11 +117,6 @@ body{
 a{
     color:black;
 }
-.active{
-    background-color:black;
-    color:white;
-    border-color:gray;
-}
 .col-md-12 h3{
     padding-top:15px;
     text-align:center;
@@ -125,4 +157,9 @@ a{
     width:100%;
     background-color:rgb(223, 223, 223);
     border:1px solid black;
+}
+.white > .active{
+    background-color:black;
+    color:white;
+    border-color:gray;
 }

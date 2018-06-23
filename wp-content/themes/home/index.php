@@ -20,11 +20,10 @@
 <body>
 <div class="navWrapper">
     <div class="container-fluid navContainer">
-                <div class="container">
                     <div class="row nav">
-                        <div class="col-md-12 active" id="home" style="z-index:5">
+                        <div class="col-md-12" id="home" style="z-index:5">
                             <div class="white" >
-                                <div class="front">
+                                <div class="front active">
                                     <h3>Home</h3>
                                 </div>
                                 <div class="back">
@@ -81,14 +80,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
 </div>
     <div class="wrapper">
-        <div class="container-fluid homeContainer">
+        <div class="homeContainer">
+            <div class="bottomRight">
                     <h3>Boyu Zhang</h3>
                     <p>I'm currently a graphic design student trying to start my career</p>
+            </div>
         </div>
+    </div>
+    <div style="clear:both">
     </div>
     
         <script src="wp-content/themes/home/js/scripts.js"></script>

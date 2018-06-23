@@ -6,22 +6,29 @@ Version: 0.3
 
 I love you
 */
+
 .designContainer, .photoContainer{
-    position:fixed;
     height:100%;
-    width:70%;
+    width:100%;
     margin-right:0;
     padding:0;
-    padding-bottom:10px;
-    opacity:0;    
-    overflow-y: scroll;
-    overflow-x:hidden;
+    padding:15px;
+    display:none;
+}
+.designWrapper{
+    width:100%;   
+    
+}
+.designHead{
+    text-align:center;
+    width:100%;
 }
 .row{
     margin:0;
 }
 .designContainer .container{
     height:100%;
+    width:100%;
     padding:0;
 }
 .imgRow{
@@ -34,6 +41,10 @@ I love you
     padding:0;
     
 }
+.imgContainer{
+    height:250px;
+    width:100%;
+}
 a{
     color:black;
 }
@@ -42,8 +53,10 @@ a{
     
 }
 .featured{
+    max-width:100%;
     width:100%;
-    height:250px;
+    max-height:250px;
+    height:100%;
     transition: transform 0.8s;
     transition-timing-function:ease;
     cursor:pointer;
@@ -59,10 +72,6 @@ a{
 }
 .container-top .row{
     margin:5px;
-}
-.allModal img{
-    max-width:1080px;
-    min-width:720px;
 }
 .imgContainer{
     overflow:hidden;
