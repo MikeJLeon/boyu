@@ -2,30 +2,17 @@
 Theme Name: Boyu's Portfolio Design
 Author: Michael Leon
 Description: Design style
-Version: 0.3
+Version: 0.4
 
 I love you
 */
 
-.designContainer, .photoContainer{
-    height:100%;
-    width:100%;
-    margin-right:0;
-    padding:0;
-    padding:15px;
-    display:none;
-}
+
 .designWrapper{
     width:100%;   
     
 }
-.designHead{
-    text-align:center;
-    width:100%;
-}
-.row{
-    margin:0;
-}
+
 .designContainer .container{
     height:100%;
     width:100%;
@@ -34,12 +21,14 @@ I love you
 .imgRow{
     width:100%;
     height:250px;
+    margin:0;
     margin-bottom:5px;
 }
 .col-lg-4{
     height:100%;
+    width:30%;
     padding:0;
-    
+    margin-left:5px;
 }
 .imgContainer{
     height:250px;

@@ -1,3 +1,6 @@
+<script>
+    window.location.href = "../";
+</script>
 <div class="designWrapper">
     <div class="pageHead designHead">
         <h2>Design</h2>
@@ -7,7 +10,7 @@
             $count = 0; 
             while(have_posts()) : the_post();
                 if($count == 0){?>
-                    <div class="row">
+                    <div class="row imgRow">
                         <a data-toggle="modal" data-target="#imgModal<?php echo get_the_ID()?>" style="z-index:10">
                             <div class="col-lg-4">
                                 <div class="imgContainer">
@@ -58,6 +61,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 <?php
                     $count = 0;
                 }else{
@@ -85,6 +89,7 @@
                                 </div>
                             </div>
                         </div>
+                
                     <?php
                     $count++;
                 }

@@ -1,3 +1,6 @@
+<script>
+    window.location.href = "../";
+</script>
 <div class="photoWrapper">
     <div class="pageHead photoHead">
         <h2>Photography</h2>

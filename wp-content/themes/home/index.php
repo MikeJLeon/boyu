@@ -92,7 +92,11 @@
     </div>
     <div style="clear:both">
     </div>
-    
+    <div id="loading">
+        Loading...
+        <br>
+        <img src="wp-content/themes/home/img/loading.gif">
+    </div>    
         <script src="wp-content/themes/home/js/scripts.js"></script>
     
 </body>
