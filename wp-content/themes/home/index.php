@@ -23,7 +23,7 @@
                     <div class="row nav">
                         <div class="col-md-12" id="home" style="z-index:5">
                             <div class="white" >
-                                <div class="front active">
+                                <div class="front home active">
                                     <h3>Home</h3>
                                 </div>
                                 <div class="back">
@@ -35,7 +35,7 @@
                     <div class="row nav">
                         <div class="col-md-12" id="design" style="z-index:5">
                             <div class="white" >
-                                <div class="front">
+                                <div class="front design">
                                     <h3>Design</h3>
                                 </div>
                                 <div class="back">
@@ -47,7 +47,7 @@
                     <div class="row nav">
                        <div class="col-md-12" id="photography" style="z-index:5">
                             <div class="white" >
-                                <div class="front">
+                                <div class="front photography">
                                     <h3>Photography</h3>
                                 </div>
                                 <div class="back">
@@ -59,7 +59,7 @@
                     <div class="row nav">
                         <div class="col-md-12" id="podcast" style="z-index:5">
                             <div class="white" >
-                                <div class="front">
+                                <div class="front podcast">
                                     <h3>Podcast</h3>
                                 </div>
                                 <div class="back">
@@ -71,7 +71,7 @@
                     <div class="row nav">
                         <div class="col-md-12" id="journal" style="z-index:5">
                             <div class="white" >
-                                <div class="front">
+                                <div class="front journal">
                                     <h3>Journal</h3>
                                 </div>
                                 <div class="back">

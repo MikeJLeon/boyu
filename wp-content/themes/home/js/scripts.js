@@ -44,6 +44,7 @@ function homeClick(){
 }; 
 
 function designClick(){
+    $(".home").removeClass(".active");
     history.pushState("design", "design", "/design/");
     $(window).resize();
     if(notHome){

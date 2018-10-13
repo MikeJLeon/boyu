@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "home"
+		},
+		{
+			"path": "design"
+		},
+		{
+			"path": "photography"
+		},
+		{
+			"path": "podcast"
+		},
+		{
+			"path": "journal"
+		}
+	],
+	"settings": {}
+}
